@@ -1,0 +1,207 @@
+body{
+	 margin: 0;
+	 padding: 0;
+	 background-color: rgb(142, 170,124);
+	 font-family: 'Open Sans', sans-serif;
+}
+
+ #logo{
+	 margin: 0;
+	 text-align: center;
+	 color: white;
+	 padding-top: 10px;
+
+ }
+ 
+ #logo h1{
+	 font-size: 3em;
+	 font-family: 'Francois+One', sans-serif;
+	 text-transform: uppercase;
+	 letter-spacing: 10px;
+ }
+ 
+ hr{
+	 border-style: dotted;
+	 border-color: #ff3300;
+	 border-width: 5px 0 0 0;
+	 width: 10%;
+ }
+ 
+ #logo h2{
+	 font-size: 1em;
+	 font-family: 'Poppins', sans-serif;
+	 font-weight: normal;
+	 letter-spacing: 2px;
+	 padding: 10px;
+ }
+ 
+ ul li a{
+	 text-decoration: none;
+ }
+ 
+ #menu ul{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+ }
+ 
+ #menu{
+	 border-radius: 5px;
+	 background-color: rgb(167, 148, 19);
+	 border-top: 3px solid #e8491ld;
+	 border-bottom: 3px solid #e8491ld;
+ }
+ 
+ #menu ul li{
+	 display: inline-block;
+ }
+ 
+ #menu ul li a{
+	 display: block;
+	 padding: 14px 15px;
+	 font-family: 'Nunito' sans-serif;
+	 color: white;
+	 text-transform: uppercase;
+	 text-shadow: 1.5px 1.5px 1.5px #223a5e;
+ }
+ 
+#menu ul li a:hover{
+	 background-color: #000d1a;
+	 
+}
+#menu ul li a:active{
+	 background-color: rgb(82, 67,45);
+}
+
+main{
+	 padding: 20px;
+	 margin: 0;
+}
+
+article{
+	 margin: 10px auto 0 auto;
+	 width: 80%;
+	 border-radius: 5px;
+	 background-color: rgba(250, 250, 235, 0.75);
+	 padding: 10px 30px 50px;
+	 box-shadow: 1.5px 1.5px 2px gray;
+}
+
+article h2{
+	 font-family: 'Lato', sans-serif;
+	 border-bottom: 1px solid black;
+}
+
+.text-img{
+	padding: 0;
+	opacity: 0.7;
+}
+
+.text-img:hover{
+	opacity: 1;
+}
+
+.datepub{
+	font-size: small;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+#footer {
+	clear: both;
+	padding: 20px;
+	text-align: center;
+	background-color: #39e3b1
+	color: white;
+	letter-spacing: 3px;
+	font-size: 1em;
+	font-family: 'Signika', sans-serif;
+	text-shadow: 1px 1px black, 1px 1px 2px black;
+}
+
+
+
+
+
+#container
+{
+	width: 1245px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topbar
+{   
+    border-radius: 5px;
+    background-color: #bd768e;
+	color: white;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	height: 170px;
+}
+
+#topbar1
+{
+	float:left;
+	border-radius: 105px;
+	padding: 20px;
+	width: 138px;
+	text-align: center;
+	border-right: 2px dotted #a5231c;
+}
+
+#topbar2
+{
+	float: left;
+	width: 760px;
+	font-size: 16px;
+
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 

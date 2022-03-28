@@ -1,0 +1,55 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+
+  <title>Issue Book</title>
+  
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" th:href="@{/css/login.css}"/>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://pngimg.com/uploads/book/book_PNG2105.png" width="100px" height="100px" alt="">
+    </a>
+    <h1>Library Management System</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Login Form -->
+    <h2>You issued book:</h2>
+    <form method="post" action="/issueBook">
+      <input type="text" th:value="${book.getTitle()+' '+book.getAuthor()}" id="title" class="fadeIn" name="title" disabled placeholder="title" required>
+      <p>to:</p>
+      <input type="text" th:value="${book.getId()}" id="book_id" class="fadeIn" name="book_id" placeholder="id" hidden>
+      <select name="user_id" class="form-control" required>
+        <option name="user_id" th:each="user : ${users}" th:text="${user.getFirstName() + ' ' + user.getLastName()}" th:value="${user.getId()}"></option>
+      </select>
+      <input type="submit" class="fadeIn fourth" value="Issue">
+    </form>
+  </div>
+</div>
+<!-- /.container -->
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4 fixed-bottom" style="background-color: #888888">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/" style="color: white">Library Management System</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    
+    
+ <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon">
+    
+ <meta charset="UTF-8"/>
+    
+ <title>Simple electronics - auto repair shop</title>
+ 
+ <link href="style.css" rel="stylesheet" type="text/css" />
+    
+<style>
+		input[type=text], select, textarea{
+			width: 80%;
+			padding: 12px;
+			border: 1px solid #bfbfbf;
+			border-radius: 4px;
+			resize: vertical;
+		}
+		input[type=email], select, textarea{
+			width: 80%;
+			padding: 12px;
+			border: 1px solid #bfbfbf;
+			border-radius: 4px;
+			resize: vertical;
+		}
+
+		table{
+			width: 85%;
+		}
+
+		th{
+			text-align: right;
+		}
+
+		label{
+			padding: 12px 12px 12px 0;
+		}
+
+		textarea{
+			height: 150px;
+		}
+
+		input[type=submit]{
+			background-color: #40cf40;
+			color: white;
+			padding: 15px 20px;
+			border: none;
+			border-radius: 6px;
+		}
+
+		#przycisk{
+			text-align:right;
+			padding-right: 50px;
+		}
+
+		input[type=submit]:hover{
+			background-color: #005666;
+		}
+
+		input[type=submit]:active{
+			background-color: #003466;
+		}
+
+	</style>
+    
+    
+</head>
+    
+    
+    
+<body>
+    
+    
+<header>
+    
+    
+    <div id="container">
+        <div id="topbar">
+			<div id="topbar1">
+				<img src="images/logo01.png"/>
+			</div>
+			    <div id="topbar2">
+                    <a href="./Index.html"><h1>Simple <p>electronics</p></h1></a>
+			    </div>
+			<div style="clear:both;"></div>
+		</div>
+    <div id="nav">
+	<ul>
+		<li><a href="Index.html"> Home</a></li>
+		<li><a href="Gal.html"> O Nas</a></li>
+        <li><a href="Usl.html"> Usługi</a></li>
+        <li><a href="Video.html">Video</a></li>
+		<li><a href="Lok.html"> Lokalizacja</a></li>
+        <li><a href="Contact.html">Kontakt</a></li>
+	</ul>
+	
+    </div>
+	</div>
+    
+    
+</header>
+    
+ <main>
+<form>
+    <fieldset>
+			<table>
+				<tr>
+					<th><label for="fname">Imię</label></th>
+					<td><input type="text" id="fname" name="firstname" placeholder="Podaj imię" required></td>
+				</tr>
+				<tr>
+					<th><label for="lname">Nazwisko</label></th>
+					<td><input type="text" id="lname" name="lastname" placeholder="Podaj nazwisko" required></td>
+				</tr>
+				<tr>
+					<th><label for="mail">E-mail</label></th>
+					<td><input type="email" id="email.com" name="email" placeholder="Podaj E-mail" required></td>
+				</tr>
+				<tr>
+					<th><label for="ltemat">Temat</label></th>
+					<td><input type="text" id="ltemat" name="temat" placeholder="Podaj temat" required></td>
+				</tr>
+				<tr>
+					<th><label for="ltresc">Treść</label></th>
+					<td>
+						<textarea id="ltresc" placeholder="Tu masz możliwość zamówienia pakietu *Sweet table* " name="tresc" required></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" id="przycisk">
+						<input type="submit">
+					</td>
+				</tr>
+
+			</table>
+	</fieldset>
+		</form>
+ </main>
+    
+    
+    
+    <div id="footer">
+        <b>&copy 2020 SimpleElectronics.pl</b>
+    </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+* { margin:0; 
+}
+body
+{
+	background-image: url("images/back02.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+	min-width:900px;
+		
+}
+
+
+
+#container
+{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+	
+}
+
+#topbar
+{
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+#topbar1
+{
+	float:left;
+	padding: 20px;
+	border-right: 5px dotted #a5231c;
+}
+
+#topbar2
+{
+	float: left;
+	margin-top: 180px;
+	margin-left: 20px;
+	text-shadow: 5px 5px 5px #ffb3b3
+
+}
+
+#logo{
+	 margin: 0;
+	 text-align: center;
+	 color: white;
+	 padding-top: 10px;
+
+ }
+ 
+ #logo h1{
+	 font-size: 3em;
+	 text-transform: uppercase;
+	 letter-spacing: 20px;
+	 
+}
+
+ul li a{
+	 text-decoration: none;
+ }
+ 
+ #nav ul{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+ }
+ 
+ #nav ul li{
+	 display: inline-block;
+ }
+ 
+ #nav ul li a{
+	 display: block;
+	 padding: 14px 15px;
+	 color: white;
+	 text-transform: uppercase;
+	 text-shadow: 1.5px 1.5px 1.5px #223a5e;
+ }
+ 
+#nav ul li a:hover{
+	 background-color: #000d1a;
+	 
+}
+#nav ul li a:active{
+	 background-color: rgb(82, 67,45);
+}
+
+article h2{
+	 border-bottom: 1px solid black;
+}
+
+.text-img{
+	padding: 0;
+	opacity: 0.7;
+}
+
+.text-img:hover{
+	opacity: 1;
+}
+
+.datepub{
+	font-size: small;
+	font-family: 'Rajdhani', sans-serif;
+}
+ 
+
+
+a {
+	 float: left;
+	 text-decoration: none;
+	 color: black;
+	 font-family: Elephant;
+	 display: inline-block;
+}
+
+ a:hover{
+	color:black;
+	text-decoration: none;
+}
+
+
+main{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: rgba(245, 255, 250, 0.7);
+    border-radius: 25px;
+    font-family: Comic Sans MS;
+    padding: 50px;
+    font-size: 30px;
+	color: black;
+    text-align: centre;
+
+ }
+ 
+ 
+figure{
+	width: 400px;
+	padding: 5px 5px 10px 5px;
+	text-align: center;
+	margin: 10px;
+	background-color: rgba(208, 194, 174, 0.8);
+	border: 2px solid #e8491d;
+	display: inline-block;
+	transition: background-color 0.5s, transform 0.9s;
+}
+		
+figure:hover{
+    background-color: white;
+    transform: scaleX(1deg);
+	border: 2px solid white;
+}
+#info ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	  
+  }
+ 
+ #map1{
+	 width: 600px;
+	 height: 600px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 margin-top: 20px;
+	 background-color: rgba(245, 255, 253, 0.8);
+	 border-radius: 20px;
+	 text-align: center;
+	 padding: 15px;
+ }
+ 
+ #map{
+	 padding: 50px;
+ }
+
+	 
+ #footer {
+	clear: both;
+    margin-top: 100px;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 1em;
+	text-shadow: 1px 1px black, 1px 1px 2px black;
+}

@@ -1,0 +1,58 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  
+
+  <title>Edit|Create User</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" th:href="@{/css/login.css}"/>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://pngimg.com/uploads/book/book_PNG2105.png" width="100px" height="100px" alt="">
+    </a>
+    <h1>Library Management System</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Login Form -->
+    <h2>Please enter information</h2>
+    <form method="post" action="/editUser">
+      <input type="text" th:value="${user.getFirstName()}" class="fadeIn" name="first_name" placeholder="First Name" required>
+      <input type="text" th:value="${user.getLastName()}" class="fadeIn" name="last_name" placeholder="Last Name" required>
+      <input type="text" th:value="${user.getLogin()}"  class="fadeIn" name="login" placeholder="Login" required>
+      <input type="text" th:value="${user.getPassword()}" class="fadeIn" name="password" placeholder="Password" required>
+      <input type="text" th:value="${user.getPhone()}" class="fadeIn" name="phone" placeholder="Phone" required>
+      <input type="text" th:value="${user.getEmail()}" class="fadeIn" name="email" placeholder="Email" required>
+      <input type="text" th:value="${user.getBirth_date()}" class="fadeIn" name="birth" placeholder="Birth date (yyyy-mm-dd)" required>
+      <input type="text" th:value="${role_id}"class="fadeIn" name="role_id" placeholder="Role" hidden>
+      <input type="text" th:value="${user_id}"class="fadeIn" name="user_id" placeholder="Role" hidden>
+      <input type="submit" class="fadeIn fourth"  value="Save">
+    </form>
+  </div>
+</div>
+<!-- /.container -->
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4 fixed-bottom" style="background-color: #888888">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/" style="color: white">Library Management System</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

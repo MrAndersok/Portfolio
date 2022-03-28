@@ -1,0 +1,333 @@
+body {
+    font-family: "Lato", sans-serif;
+    background: aqua;
+    background-image: url("https://www.wallpapertip.com/wmimgs/83-833935_old-book-page-background-images-pictures-becuo-blank.jpg");
+    background-size: 100% auto;
+}
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+
+}
+
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 600px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: url("https://vignette.wikia.nocookie.net/bladerunner/images/8/88/Wallace_Corporation_logo.png/revision/latest?cb=20190719204929");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.main {
+    padding: 0px 10px;
+    background: darkgray;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+
+
+.mainBLock{
+
+    width: 1280px;
+    height: 900px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.headerBlock{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+}
+.leftInfoBlock{
+    width: 19%;
+    margin-right: 1%;
+    height: 100%;
+    float: left;
+    background-color: gray;
+    border-radius: 10px;
+}
+.leftInfoBlockKiller{
+    width: 19%;
+    margin-right: 1%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+}
+.leftBlockLogo{
+    padding-top: 10px;
+    width: 100%;
+    height: 50%;
+    background-image: url("https://image.flaticon.com/icons/png/512/64/64096.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.leftBlockLogoKiller{
+    padding-top: 10px;
+    width: 100%;
+    height: 50%;
+    background-color: #FFFFFF;
+}
+
+
+.leftBlockLogoManager{
+    padding-top: 10px;
+    width: 100%;
+    height: 50%;
+    background-image: url("https://w7.pngwing.com/pngs/134/822/png-transparent-computer-icons-business-man-people-logo-recruiter.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.leftBlockInformation{
+    text-align: center;
+}
+.leftBlockInformationKiller{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.centralInfoBlock{
+    width: 60%;
+    height: 100%;
+    float: left;
+    border-radius: 10px;
+}
+
+.centralLogoBlock{
+    width: 100%;
+    height: 59%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    background-image: url("https://vignette.wikia.nocookie.net/bladerunner/images/8/88/Wallace_Corporation_logo.png/revision/latest?cb=20190719204929");
+    background-position: center;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    float: left;
+}
+.centralUserInfoBlock{
+    width: 100%;
+    height: 40%;
+    float: left;
+    border-radius: 10px;
+    background-color: gray;
+}
+.userInfoBlock{
+    font-size: 17pt;
+    width:98%;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    height: 87%;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.rightInfoBlock{
+    width: 19%;
+    height: 100%;
+    float: left;
+    margin-left: 1%;
+    border-radius: 10px;
+    background-color: gray;
+}
+.rightInfoBlockKiller{
+    width: 19%;
+    height: 100%;
+    float: left;
+    margin-left: 1%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.rightInfoBlockLogo{
+    width: 100%;
+    height: 50%;
+    background-image: url("https://w7.pngwing.com/pngs/179/654/png-transparent-computer-icons-others-map-location-circle.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rightInfoBlockLogoKiller{
+    width: 100%;
+    height: 50%;
+    background-color: #FFFFFF;
+}
+.rightInfoBlockButton{
+    width: 100%;
+    height: 49%;
+    margin-top: 1%;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: gray;
+    text-align: center;
+}
+.rightInfoBlockButtonKiller{
+    width: 100%;
+    height: 49%;
+    margin-top: 1%;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.contentBlock{
+    width: 100%;
+    height: 63%;
+    margin-bottom: 1%;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footerBlock{
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: gray;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}

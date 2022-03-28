@@ -1,0 +1,79 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  
+
+  <title>Admin</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://pngimg.com/uploads/book/book_PNG2105.png" width="100px" height="100px" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <form method="get" action="/history">
+          <button type="submit" class="btn btn-primary" name="user_id" th:value="${sessionUser.getId()}">History</button>
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">LogOut</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <p></p>
+    <h1>Library Management System information</h1>
+    <p></p>
+    <table class="table table-dark table-bordered table-hover" style="font-size: 20pt;">
+      <tr>
+        <td>
+          Count of books</td>
+        <td th:text="${booksCount}"></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/booksAvailable">Avaliable books</a></td>
+        <td th:text="${available}"></td>
+      </tr>
+      <tr th:if="${sessionUser.getRole().getRoleName()=='ADMIN' || sessionUser.getRole().getRoleName()=='WORKER'}">
+        <td>
+          <a href="/booksUnavailable">Issued books</a></td>
+        <td th:text="${unavailable}"></td>
+      </tr>
+      <tr th:if="${sessionUser.getRole().getRoleName()=='ADMIN'}">
+        <td><a href="/workers">Workers</a></td>
+        <td th:text="${workersCount}"></td>
+      </tr>
+      <tr th:if="${sessionUser.getRole().getRoleName()=='ADMIN' || sessionUser.getRole().getRoleName()=='WORKER'}">
+        <td><a href="/users">Users</a></td>
+        <td th:text="${usersCount}"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- /.container -->
+<!-- Footer -->
+<footer class="font-small unique-color-dark fixed-bottom" style="background-color: #888888;">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/" style="color: white">Library Management System</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
